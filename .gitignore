@@ -1,0 +1,6 @@
+.DS_Store
+.vscode
+*/.vscode
+.git
+node_modules
+*/node_modiles

@@ -1,0 +1,16 @@
+{
+  "name": "ghost",
+  "version": "1.0.0",
+  "description": "VMx86",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "node ./opstool/opstool > ./src/disasm/opcodes.js",
+    "start": "node ./example/main.js",
+    "test": "mocha ./tests"
+  },
+  "author": "Yaroslav Gaponov",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}

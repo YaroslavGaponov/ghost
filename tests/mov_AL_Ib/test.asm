@@ -1,0 +1,2 @@
+mov al, 0x12
+mov al, 0x34
