@@ -9,10 +9,10 @@ module.exports = function (op) {
         for (let i = 0; i < op.args[0].length; i++) {
             switch (op.args[0][i].type) {
                 case 'REGISTER':
-                    offset += this[op.args[0].value];
+                    offset += this[op.args[0][i].value];
                     break;
                 case 'VALUE':
-                    offset += op.args[0].value;
+                    offset += op.args[0][i].value;
                     break;
             }
         }

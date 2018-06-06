@@ -9183,7 +9183,7 @@ hd0_post_store_logical:
   mov   al, #0x00     ;; sum
 hd0_post_checksum_loop:
   add   al, [si]
-  inc   si
+  inc   si 
   dec   cl
   jnz hd0_post_checksum_loop
   not   al  ;; now take 2s complement

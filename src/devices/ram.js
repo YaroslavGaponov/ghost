@@ -29,13 +29,13 @@ class Ram {
     write(addr, value, size) {
       switch (size) {
         case 1:
-          this.space.writeUInt8(value, addr);
+          this.space.writeUInt8(value & 0xff, addr);
           break;
         case 2:
-          this.space.writeUInt16LE(value, addr);
+          this.space.writeUInt16LE(value & 0xffff, addr);
           break;
         case 4:
-          this.space.writeUInt32LE(value, addr);
+          this.space.writeUInt32LE(value & 0xffffffff, addr);
           break;
       }
     }

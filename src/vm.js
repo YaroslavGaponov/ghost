@@ -169,7 +169,7 @@ class VM {
 
 
     if (DEBUG) {
-      console.log(result);
+      console.log(JSON.stringify(result));
     }
 
     const name = `${result.opcode.name}_${result.opcode.args.join('_')}`;
@@ -178,6 +178,7 @@ class VM {
     }
 
     this[name](result);
+
   }
 
 

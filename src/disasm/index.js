@@ -78,7 +78,8 @@ const ARG_REGS = Object.freeze({
     BP: new Register('bp', 2),
     DI: new Register('di', 2),
     SI: new Register('si', 2),
-    ES: new Register('es', 2)
+    ES: new Register('es', 2),
+    CS: new Register('cs', 2)
 });
 
 class DisAsm {
@@ -267,6 +268,8 @@ class DisAsm {
                             return new Value(this.fetch(2), 2);
                         }
 
+                    case '0':return new Value(0, prefix.size);
+                    case '1':return new Value(1, prefix.size);
                 }
 
                 throw `Argument type ${arg} is not supported`;

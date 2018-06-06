@@ -122,7 +122,7 @@
 
   // 1K of base memory used for Extended Bios Data Area (EBDA)
   // EBDA is used for PS/2 mouse support, and IDE BIOS, etc.
-#define EBDA_SEG           0x9FC0
+#define EBDA_SEG           0x9FC0 
 #define EBDA_SIZE          1              // In KiB
 #define BASE_MEM_IN_K   (640 - EBDA_SIZE)
 

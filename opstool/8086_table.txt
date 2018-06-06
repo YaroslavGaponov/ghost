@@ -105,7 +105,7 @@
 68	--
 69	--
 6A	--
-6B	--
+6B	IMUL		Gv	Ev	Ib
 6C	--
 6D	--
 6E	--
@@ -199,7 +199,7 @@ C5	LDS		Gv	Mp
 C6	MOV		Eb	Ib
 C7	MOV		Ev	Iv
 C8	--
-C9	--
+C9	LEAVE
 CA	RETF	Iw
 CB	RETF
 CC	INT		3

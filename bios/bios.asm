@@ -2971,7 +2971,7 @@
 00001955  8846FE            mov [bp-0x2],al
 00001958  8A46FE            mov al,[bp-0x2]
 0000195B  3C08              cmp al,0x8
-0000195D  0F82D6FE          jc near 0x1837
+0000195D  0F82D6FE          jc near 0x1837 
 00001961  30C0              xor al,al
 00001963  8846FE            mov [bp-0x2],al
 00001966  EB21              jmp short 0x1989
@@ -16024,7 +16024,7 @@
 000091B8  C0E103            shl cl,byte 0x3
 000091BB  EB06              jmp short 0x91c3
 000091BD  C1EB04            shr bx,byte 0x4
-000091C0  C0E104            shl cl,byte 0x4
+000091C0  C0E104            shl cl,byte 0x4 
 000091C3  891E4D00          mov [0x4d],bx
 000091C7  880E4F00          mov [0x4f],cl
 000091CB  B10F              mov cl,0xf
@@ -16104,7 +16104,7 @@
 00009272  E670              out 0x70,al
 00009274  E471              in al,0x71
 00009276  E8E5FF            call 0x925e
-00009279  666BC03C          imul eax,eax,byte +0x3c
+00009279  666BC03C          imul eax,eax,byte +0x3c 
 0000927D  6689C2            mov edx,eax
 00009280  6631C0            xor eax,eax
 00009283  B002              mov al,0x2
